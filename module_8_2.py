@@ -17,7 +17,7 @@ def calculate_average(numbers):
     try:
         check_n = 0
         for i in numbers:
-            if isinstance(i, int):
+            if isinstance(i, int) or isinstance(i,float):
                 check_n += 1
         average = personal_sum(numbers)[0] / check_n
     except ZeroDivisionError:
